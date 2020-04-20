@@ -1,0 +1,6 @@
+framework module Yuehan {
+  umbrella header "Yuehan-umbrella.h"
+
+  export *
+  module * { export * }
+}

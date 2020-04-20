@@ -1,0 +1,16 @@
+PODS:
+  - Yuehan (0.1.0)
+
+DEPENDENCIES:
+  - Yuehan (from `../`)
+
+EXTERNAL SOURCES:
+  Yuehan:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Yuehan: ab02feeac077621fba3183af3ee44c285cda8f97
+
+PODFILE CHECKSUM: 1c921cad3d1f81f5a4270433c601f88cfe543c57
+
+COCOAPODS: 1.8.3

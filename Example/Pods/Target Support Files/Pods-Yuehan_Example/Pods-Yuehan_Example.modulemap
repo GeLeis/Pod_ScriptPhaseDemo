@@ -1,0 +1,6 @@
+framework module Pods_Yuehan_Example {
+  umbrella header "Pods-Yuehan_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

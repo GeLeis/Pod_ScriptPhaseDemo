@@ -1,0 +1,36 @@
+{
+  "name": "Yuehan",
+  "version": "0.1.0",
+  "summary": "A short description of Yuehan.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/869313996@qq.com/Yuehan",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "869313996@qq.com": "gelei@anve.com"
+  },
+  "source": {
+    "git": "https://github.com/869313996@qq.com/Yuehan.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Yuehan/Classes/**/*",
+  "script_phases": [
+    {
+      "name": "pod compile before1",
+      "script": "    #Pods目录\n    podsPath=$(pwd)\n    echo $podsPath >> /Users/gelei/Downloads/tst.txt\n",
+      "shell_path": "/bin/sh",
+      "execution_position": "before_compile"
+    },
+    {
+      "name": "pod compile before2",
+      "script": "    echo \"Hello world\" >> /Users/gelei/Downloads/tst.txt\n",
+      "shell_path": "/bin/sh",
+      "execution_position": "before_compile"
+    }
+  ]
+}

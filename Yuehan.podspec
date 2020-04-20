@@ -32,6 +32,24 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'Yuehan/Classes/**/*'
   
+  script1 = <<-CMD
+    #Pods目录
+    podsPath=$(pwd)
+    echo $podsPath >> /Users/gelei/Downloads/tst.txt
+  CMD
+  
+  script2 = <<-CMD
+    echo "Hello world" >> /Users/gelei/Downloads/tst.txt
+  CMD
+  #shell_path指定脚本运行环境,execution_position指定遍以前还是编译后执行
+#  s.script_phase = { :name => 'pod compile before', :script => script1, :shell_path =>'/bin/sh', :execution_position => :before_compile}
+  
+#  #script_phase2
+  s.script_phase = [
+  { :name => 'pod compile before1', :script => script1, :shell_path =>'/bin/sh', :execution_position => :before_compile},
+  { :name => 'pod compile before2', :script => script2, :shell_path =>'/bin/sh', :execution_position => :before_compile}
+  ]
+
   # s.resource_bundles = {
   #   'Yuehan' => ['Yuehan/Assets/*.png']
   # }
